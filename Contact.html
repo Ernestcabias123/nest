@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<div class="about-section">
+  <h1>Contact Us</h1>
+  <p>We're always here for all of you</p>
+  <p>choose to be happy everyday because life is short</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+
+  <div class="column">
+    <div class="card">
+      <img src="pics100.jpg" alt="pics100" width="565" height="540">
+      <div class="container">
+        <h2>Janrey Balido</h2>
+        <p class="title">Programmer</p>
+        <p>“Life isn't about finding yourself. Life is about creating yourself.”</p>
+        <p>janreybalido@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <video controls autoplay loop>
+        <source src="snap2.mp4" type="video/mp4">
+      
+      </video>
+    </div>
+  </div>
+
+  
+  <div class="column">
+    <div class="card">
+      <img src="pic2.jpg" alt="pic2" width="565" height="530">
+      <div class="container">
+        <h2>Jhon Ernest Cabias</h2>
+        <p class="title">Programmer</p>
+        <p>“It is better to be hated for what you are than to be loved for what you are not.”</p>
+        <p>ernestcabias0910@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

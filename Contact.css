@@ -1,0 +1,8 @@
+.column{
+    
+    background-image: url(nest1.jpg);
+    background-size:cover;
+    background-position:initial;
+    font-family: sans-serif;
+position:absolute;
+}

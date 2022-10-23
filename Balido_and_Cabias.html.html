@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+</style>
+</head>
+<link rel="stylesheet" href="Web.css">
+<body>
+    <div class="Menu-Bar">
+        <h2 class="logo">アニメ</h2>
+            <ul>
+                
+                
+                <li><a href="#">Interest</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="file:///C:/Users/Computer/Desktop/jujutsu.html">Jujutsu Kaisen</a></li>
+                            <li><a href="file:///C:/Users/Computer/Desktop/spy x family.html">Spy x Family</a></li>
+                            <li><a href="file:///C:/Users/Computer/Desktop/demonslayer.html">Demon Slayer</a></li>
+                            <li><a href="file:///C:/Users/Computer/Desktop/AttackOnTitan.html">Attack on Titan</a></li>
+                            <li><a href="file:///C:/Users/Computer/Desktop/hunter.html">Hunter x Hunter</a></li>
+    
+                        </ul>
+                    </div>
+                <li><a href="#">Gallery</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="file:///C:/Users/Computer/Desktop/Gallery.html">Janrey</a></li>
+                            <li><a href="file:///C:/Users/Computer/Desktop/ernest.html">Jhon Ernest</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="file:///C:/Users/Computer/Desktop/Contact.html">Contact Us</a></li>
+                <li><a href="#">About Us</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="file:///C:/Users/Computer/Desktop/JHONERNEST.html">Jhon Ernest</a></li>
+                            <li><a href="file:///C:/Users/Computer/Desktop/JANREY.html">Janrey</a></li>
+                        </ul>
+                    </div></li>
+             
+            </ul>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="jujutsu.png" style="width:100%">
+  <div class="text">"No matter allies you have around you, when you die, you'll be alone."</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Jujutsu kaisen.jpg" style="width:100%">
+  <div class="text">“All we can do is live until the day we die. Control what we can…and fly free.”</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="anime1.jpg" style="width:100%">
+  <div class="text">“Whatever you lose, you’ll find it again. But what you throw away you’ll never get back.“</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="anime2.jpg" style="width:100%">
+  <div class="text">“We don’t have to know what tomorrow holds! That’s why we can live for everything we’re worth today!” </div>
+</div>
+
+<div class="mySlides fade">
+  <img src="anime3.jpg" style="width:100%">
+  <div class="text">“Why should I apologize for being a monster? Has anyone ever apologized for turning me into one?”</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="anime4.jpg" style="width:100%">
+  <div class="text">“If you wanna make people dream, you’ve gotta start by believing in that dream yourself!”</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="pics6.jpg" style="width:100%">
+  <div class="text">“Giving up kills people. When people reject giving up… they finally win the right to transcend humanity.”</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="anime6.jpg" style="width:100%">
+  <div class="text">Do the parents of the world normally carry out such difficult missions all the time?</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+</body>
+</html> 
